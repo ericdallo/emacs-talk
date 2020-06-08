@@ -1,0 +1,3 @@
+#+TITLE: Emacs talk
+
+Emacs introduction using ~org-mode~ together with ~org-tree-slide~ for slides presentation.
