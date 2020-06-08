@@ -1,6 +1,11 @@
 #+TITLE: Emacs talk
 
-* Slide 1
+* Slide
+** Emacs Talk
+
+[[file:images/logo.png]]
+
+* Slide
 ** History
 
 - Created by Richard Stallman, founder of the GNU foundation.
@@ -9,38 +14,130 @@
 
 - Emacs is among the oldest open source projects *still under development*!
 
-* Slide 2
+* Slide
 ** Core
+
+- Single thread
 
 - 20% in C for performances reasons
 
 - 80% in *Elisp* (Emacs lisp)
 
-* Slide 3
-** The Magic
+* Slide
+** Elisp
 
+- A Lisp dialect programming language
 
-* Slide 4
+#+BEGIN_SRC emacs-lisp
+  (defun emacs-talk--print-message ()
+    "Print a hello world message."
+    (message "Hello from emacs-talk"))
+
+  (defun emacs-talk-hello ()
+    "Print a emacs message on minibuffer"
+    (interactive)
+    (emacs-talk--print-message))
+ #+END_SRC
+
+* Slide
+** Elisp
+
+- All is done inside buffers
+
+#+BEGIN_SRC emacs-lisp
+(defun emacs-talk--is-a-flutter-project ()
+  (with-temp-buffer
+    (insert-file-contents "pubspec.yaml")
+    (goto-char (point-min))
+    (re-search-forward "sdk\s*:\s*flutter" nil t)))
+#+END_SRC
+
+* Slide
+** Packages sources
+
+*** ELPA
+
+- Emacs official packages
+
+***  MELPA
+
+- *4597* packages!
+
+- Community driven 
+
+- Open source on Github
+
+* Slide
+** Keybindings +hell+
+
+~M~ - Meta key (Command or Alt)
+~C~ - Control
+~S~ - Shift
+~SPC~ - Space
+~RET~ - Return ()
+
+~M-x~ - execute-command
+~M-x~ ~package-install~ - Install a package
+~M-X~ ~describe-bindings~ - Show all available keybindings
+~C-x C-s~ - Save buffer
+
+* Slide
+** Configuration
+
+- Everything starts at ~~/.emacs.d/init.el~
+
+- Changing variables value
+
+ #+BEGIN_SRC emacs-lisp
+(setq emacs-talk-is-awesome t)
+#+END_SRC
+
+* Slide
+** Frames
+Running instances of Emacs
+
+*** Windows
+Views for buffers
+
+**** Buffers
+Display contents of a file
+Display outputs of programs
+
+* Slide
+** Modes
+
+*** Major mode
+
+- Only 1 major mode per buffer
+
+- Examples: ~dart-mode~, ~java-mode~, ~clojure-mode~
+
+*** Minor modes
+
+- Many minor modes per buffer
+
+- Examples: ~cider-mode~, ~evil-mode~, ~lsp-mode~
+
+* Slide
 ** Emacs roots 😰
 
-[[file:images/emacs-raw.png]]
+[[file:images/emacs-raw.png]] [[file:images/frame-window-buffer.png]]
 
-* Slide 5
+* Slide
 *** Doom emacs [[file:images/yay-evil.png]]
 
 [[file:images/doom-emacs.png]]
 
-* Slide 6
+* Slide
 *** Spacemacs
 
 [[file:images/spacemacs.png]]
 
-* Slide 7
+* Slide
 ** Thank you!
 
 Any questions?
 
-
  Slides - [[https://github.com/ericdallo/emacs-talk][https://github.com/ericdallo/emacs-talk]]
 
- Github - [[https://github.com/ericdallo][ericdallo]]
+ Github - [[https://github.com/ericdallo][ericdallo]]
