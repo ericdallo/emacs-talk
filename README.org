@@ -15,9 +15,20 @@
 - Emacs is among the oldest open source projects *still under development*!
 
 * Slide
+** Why should I give a try?
+
+Why Emacs? - https://batsov.com/articles/2011/11/19/why-emacs/
+
+[[http://imgs.xkcd.com/comics/real_programmers.png]]
+
+- Shortcuts for everything!
+
+- Very extensible
+
+* Slide
 ** Core
 
-- Single thread
+- Single thread (yet)
 
 - 20% in C for performances reasons
 
@@ -68,7 +79,7 @@
 - Open source on Github
 
 * Slide
-** Keybindings +hell+
+** Keybindings +hell?+
 
 ~M~ - Meta key (Command or Alt)
 ~C~ - Control
