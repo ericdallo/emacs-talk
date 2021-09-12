@@ -1,12 +1,11 @@
 #+TITLE: Emacs talk
+#+AUTHOR: @ericdallo
 
-* Slide
-** Emacs Talk
+* Emacs Talk
 
 [[file:images/logo.png]]
 
-* Slide
-** History
+* History
 
 - Created by Richard Stallman, founder of the GNU foundation.
  
@@ -14,19 +13,17 @@
 
 - Emacs is among the oldest open source projects *still under development*!
 
-* Slide
-** Why should I give a try?
+* Why should I give a try?
 
 Why Emacs? - https://batsov.com/articles/2011/11/19/why-emacs/
 
-[[http://imgs.xkcd.com/comics/real_programmers.png]]
+[[file:images/real-programmers.png][file:images/real-programmers.png]]
 
 - Shortcuts for everything!
 
 - Very extensible
 
-* Slide
-** Core
+* Core
 
 - Single thread (yet)
 
@@ -34,8 +31,7 @@ Why Emacs? - https://batsov.com/articles/2011/11/19/why-emacs/
 
 - 80% in *Elisp* (Emacs lisp)
 
-* Slide
-** Elisp
+* Elisp
 
 - A Lisp dialect programming language
 
@@ -50,8 +46,7 @@ Why Emacs? - https://batsov.com/articles/2011/11/19/why-emacs/
     (emacs-talk--print-message))
  #+END_SRC
 
-* Slide
-** Elisp
+* Elisp
 
 - All is done inside buffers
 
@@ -63,8 +58,7 @@ Why Emacs? - https://batsov.com/articles/2011/11/19/why-emacs/
     (re-search-forward "sdk\s*:\s*flutter" nil t)))
 #+END_SRC
 
-* Slide
-** Packages sources
+* Packages sources
 
 *** ELPA
 
@@ -78,8 +72,7 @@ Why Emacs? - https://batsov.com/articles/2011/11/19/why-emacs/
 
 - Open source on Github
 
-* Slide
-** Keybindings +hell?+
+* Keybindings +hell?+
 
 ~M~ - Meta key (Command or Alt)
 ~C~ - Control
@@ -92,8 +85,7 @@ Why Emacs? - https://batsov.com/articles/2011/11/19/why-emacs/
 ~M-X~ ~describe-bindings~ - Show all available keybindings
 ~C-x C-s~ - Save buffer
 
-* Slide
-** Configuration
+* Configuration
 
 - Everything starts at ~~/.emacs.d/init.el~
 
@@ -103,8 +95,7 @@ Why Emacs? - https://batsov.com/articles/2011/11/19/why-emacs/
 (setq emacs-talk-is-awesome t)
 #+END_SRC
 
-* Slide
-** Frames
+* Frames
 Running instances of Emacs
 
 *** Windows
@@ -114,8 +105,7 @@ Views for buffers
 Display contents of a file
 Display outputs of programs
 
-* Slide
-** Modes
+* Modes
 
 *** Major mode
 
@@ -129,23 +119,19 @@ Display outputs of programs
 
 - Examples: ~cider-mode~, ~evil-mode~, ~lsp-mode~
 
-* Slide
-** Emacs roots 😰
+* Emacs roots 😰
 
 [[file:images/emacs-raw.png]] [[file:images/frame-window-buffer.png]]
 
-* Slide
-*** Doom emacs [[file:images/yay-evil.png]]
+* Doom emacs [[file:images/yay-evil.png]]
 
 [[file:images/doom-emacs.png]]
 
-* Slide
-*** Spacemacs
+* Spacemacs
 
 [[file:images/spacemacs.png]]
 
-* Slide
-** Thank you!
+* Thank you!
 
 Any questions?
 
